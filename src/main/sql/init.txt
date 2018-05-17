@@ -1,0 +1,27 @@
+CREATE DATABASE testdb;
+
+USE testdb;
+
+CREATE TABLE IF NOT EXISTS `developer` (
+  `id` BIGINT PRIMARY KEY AUTO_INCREMENT,
+  `name` VARCHAR(10) DEFAULT '',
+  `site` VARCHAR(20) DEFAULT '',
+  `avator` VARCHAR(30) DEFAULT '')
+  DEFAULT CHARSET = utf8;
+
+INSERT INTO developer (id,name,site,avator)
+VALUES (0,'lulei','loooirelovbb.me','default_avatar');
+
+INSERT INTO developer (name,site,avator)
+VALUES ('zhanghua','test.com','default_avatar');
+
+INSERT INTO developer (name,site,avator)
+VALUES ('weixiao','example.com','default_avatar');
+
+INSERT INTO developer (name,site,avator)
+VALUES ('liangzi','test.com','default_avatar');
+
+INSERT INTO developer (name,site,avator)
+VALUES ('kangkang','example.com','default_avatar');
+
+SELECT * FROM testdb.developer;
